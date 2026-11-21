@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>صانع المحتوى AI</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">✦ صانع المحتوى <span>AI</span></div>
+  <p>استوديو أدواتك لصناعة المحتوى</p>
+</header>
+<main>
+  <section class="welcome">
+    <h1>ماذا تريد أن تصنع اليوم؟</h1>
+    <p>ابدأ بفكرة، وحوّلها إلى محتوى جاهز للتطوير والنشر.</p>
+  </section>
+
+  <section class="grid">
+    <button class="tool" data-tool="ideas"><b>💡</b><strong>أفكار محتوى</strong><small>اقترح أفكاراً لمقاطعك</small></button>
+    <button class="tool" data-tool="script"><b>✍️</b><strong>كتابة سيناريو</strong><small>رتّب فكرتك إلى مشاهد</small></button>
+    <button class="tool" data-tool="caption"><b>📱</b><strong>وصف ومنشور</strong><small>عنوان ووصف ووسوم</small></button>
+    <button class="tool" data-tool="storyboard"><b>🎬</b><strong>خطة فيديو</strong><small>مشاهد ولقطات مقترحة</small></button>
+  </section>
+
+  <section class="panel">
+    <label for="topic">اكتب موضوع المحتوى أو فكرتك</label>
+    <textarea id="topic" rows="4" placeholder="مثال: قصة قصيرة عن النجاح..."></textarea>
+    <div class="controls">
+      <select id="kind" aria-label="نوع المحتوى">
+        <option value="عام">محتوى عام</option>
+        <option value="تيك توك">تيك توك</option>
+        <option value="يوتيوب">يوتيوب</option>
+        <option value="انستغرام">إنستغرام</option>
+        <option value="سناب شات">سناب شات</option>
+      </select>
+      <button id="make" class="primary">جهّز المسودة</button>
+    </div>
+    <div id="result" class="result" aria-live="polite">ستظهر المسودة هنا.</div>
+    <div class="actions">
+      <button id="copy">نسخ النص</button>
+      <button id="save">حفظ المسودة</button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>مسوداتي المحفوظة</h2>
+    <div id="saved" class="saved">لا توجد مسودات بعد.</div>
+  </section>
+
+  <section class="notice">
+    <strong>ملاحظة مهمة:</strong>
+    <p>هذه النسخة الأولى تعمل مجاناً كواجهة وتخزين للمسودات على جهازك. توليد الذكاء الاصطناعي الحقيقي، وإنشاء الصور والصوت والفيديو، يحتاج ربط خدمات ذكاء اصطناعي؛ بعضها يوفر استخداماً مجانياً محدوداً وبعضها مدفوع. لن ندّعي أن هذه الميزات تعمل قبل ربطها.</p>
+  </section>
+</main>
+<footer>صانع المحتوى AI · النسخة التجريبية الأولى</footer>
+<script src="app.js"></script>
+</body>
+</html>
